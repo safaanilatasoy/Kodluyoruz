@@ -6,7 +6,8 @@ Bu repo Kodluyoruz Front-End Eğitiminde oluşturduğumuz ilk repo. içerisinde 
 
 Öncelikle projeyi clonelayın. 
 
-''' git clone https://github.com/safaanilatasoy/kodluyoruzilkrepo.git '''
+''' git clone https://github.com/safaanilatasoy/kodluyoruzilkrepo.git 
+'''
 
 
 # Usage
@@ -15,8 +16,10 @@ Projeyi cloneladıktan sonra Visual Studio Code programında açınız.
 
 Linux için:
 
-''' cd kodluyoruzilkrepo
-code . '''
+''' 
+cd kodluyoruzilkrepo
+code . 
+'''
 
 # Contrubuting
 
