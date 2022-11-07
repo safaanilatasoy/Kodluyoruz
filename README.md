@@ -6,9 +6,8 @@ Bu repo Kodluyoruz Front-End Eğitiminde oluşturduğumuz ilk repo. içerisinde 
 
 Öncelikle projeyi clonelayın. 
 
-''' git clone https://github.com/safaanilatasoy/kodluyoruzilkrepo.git 
-'''
-
+<code> git clone https://github.com/safaanilatasoy/kodluyoruzilkrepo.git 
+</code>
 
 # Usage
 
