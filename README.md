@@ -6,7 +6,7 @@ Bu repo Kodluyoruz Front-End Eğitiminde oluşturduğumuz ilk repo. içerisinde 
 
 Öncelikle projeyi clonelayın. 
 
-<pre><code style="color:blue;"> git clone https://github.com/safaanilatasoy/kodluyoruzilkrepo.git 
+<pre><code style="color:#fff;"> git clone https://github.com/safaanilatasoy/kodluyoruzilkrepo.git 
 </code></pre>
 
 # Usage
