@@ -6,7 +6,7 @@ Bu repo Kodluyoruz Front-End Eğitiminde oluşturduğumuz ilk repo. içerisinde 
 
 Öncelikle projeyi clonelayın. 
 
-<pre><code style="color:#fff;"> git clone https://github.com/safaanilatasoy/kodluyoruzilkrepo.git 
+<pre><code> git clone https://github.com/safaanilatasoy/kodluyoruzilkrepo.git 
 </code></pre>
 
 # Usage
@@ -15,10 +15,10 @@ Projeyi cloneladıktan sonra Visual Studio Code programında açınız.
 
 Linux için:
 
-<code>
+<pre><code>
 cd kodluyoruzilkrepo
 code . 
-</code>
+</code></pre>
 
 # Contrubuting
 
@@ -26,4 +26,4 @@ Pull requestler kanul edilir. Büyük değişiklikler için, lütfen önce neyi 
 
 # License 
 
-MIT
+<pre>MIT</pre>
