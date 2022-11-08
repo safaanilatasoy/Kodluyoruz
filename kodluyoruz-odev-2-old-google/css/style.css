@@ -1,0 +1,13 @@
+.main-con{
+    margin-top:12%;
+}
+.search-bar{
+    width: 22em;
+}
+.search-button{
+    margin-top:0.3em;
+}
+.bottom-menu{
+    background-color: cyan;
+    padding: 0.5em;
+}
