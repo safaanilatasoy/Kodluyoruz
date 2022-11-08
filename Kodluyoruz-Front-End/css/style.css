@@ -119,3 +119,7 @@ body {
     transform: scale(1.05);
 
 }
+.buy-button{
+    float:right; 
+    margin-right:1%;
+}
