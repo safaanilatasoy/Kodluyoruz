@@ -11,8 +11,8 @@ while (i <= 10) {
 
 
 var arabalar = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
-let i = 0
-while(arabalar[i]){
-    console.log(arabalar[i])
-    i++
+let y = 0
+while(arabalar[y]){
+    console.log(arabalar[y])
+    y++
 }
