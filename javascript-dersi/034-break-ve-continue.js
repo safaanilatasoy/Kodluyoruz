@@ -23,7 +23,7 @@ for (; counter < 10; counter++) {
 // Continue ---> işlemi atlar
 
 
-const UL_DOM = document.querySelector("#userListDOM")
+const UL_DOM = document.querySelector("#userList")
 
 for(let i=0; i<LOREM_LIST.length; i++){
     if(LOREM_LIST[i] === "dolor"){
