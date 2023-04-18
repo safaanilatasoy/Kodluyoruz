@@ -38,11 +38,25 @@ function newElement(event) {
   items.push(value);
   localStorage.setItem("items", JSON.stringify(items));
 
-
   input.value = ""; // Input alanını temizleyin
+
+  // Toast öğesini seçin
+  const toast = document.querySelector(".toast");
+
+  // Toast mesajını güncelleyin
+  const toastMessage = toast.querySelector(".toast-body");
+  toastMessage.textContent = "Yeni bir öğe eklendi.";
+
+  // Toast öğesini gösterin
+  const bootstrapToast = new bootstrap.Toast(toast);
+  bootstrapToast.show();
 }
 
 function clearList(){
     localStorage.clear();
     location.reload();
+
+    
 }
+
+
