@@ -9,8 +9,25 @@ function loadList() {
   for (const item of items) {
     const listItem = document.createElement("li");
     listItem.innerText = item;
+
+    const deleteButton = document.createElement("button");
+    deleteButton.innerHTML = "&times;";
+    deleteButton.classList.add("close");
+    deleteButton.addEventListener("click", () => {
+      list.removeChild(listItem);
+
+      const index = items.indexOf(item);
+      if (index > -1) {
+        items.splice(index, 1);
+        localStorage.setItem("items", JSON.stringify(items));
+      }
+    });
+
+    listItem.appendChild(deleteButton);
     list.appendChild(listItem);
   }
+
+     
 }
 
 loadList();
@@ -32,6 +49,24 @@ function newElement(event) {
   const list = document.getElementById("list");
   const listItem = document.createElement("li");
   listItem.innerText = value;
+  list.appendChild(listItem);
+
+  const deleteButton = document.createElement("button"); // Sil düğmesini oluşturun
+  deleteButton.innerHTML = "&times;";
+  deleteButton.classList.add("close"); // Bootstrap close sınıfını ekleyin
+  deleteButton.addEventListener("click", () => {
+    // Sil düğmesine tıklanınca
+    list.removeChild(listItem); // Öğeyi listeden kaldırın
+
+    const items = JSON.parse(localStorage.getItem("items")) || [];
+    const index = items.indexOf(value);
+    if (index > -1) {
+      items.splice(index, 1); // Öğeyi localStorage'den kaldırın
+      localStorage.setItem("items", JSON.stringify(items));
+    }
+  });
+
+  listItem.appendChild(deleteButton); // Sil düğmesini öğenin sonuna ekleyin
   list.appendChild(listItem);
 
   const items = JSON.parse(localStorage.getItem("items")) || [];
