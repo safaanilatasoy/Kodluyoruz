@@ -1,4 +1,5 @@
 // Object ve array destructing nasaıl kullanılır
+// Destructuring bir obje veya bir array içinden her bir elemanın alınıp bir değişken içine kaydedilmesi.
 
 
 // Object Destructing
