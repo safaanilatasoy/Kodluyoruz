@@ -57,6 +57,6 @@ gerek kalmıyor.
 
 ## Eğer sadece başlık mesajını değiştirmek isterseniz
 
-    ```
+    
     git commit --amend -m *yeni mesaj*
-    ```
+    
