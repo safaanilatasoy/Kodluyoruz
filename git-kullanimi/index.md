@@ -68,6 +68,6 @@ git revert <Commit ID'nin En Az 7 Karakteri>
 
 ## Farklılıkları Gösteren Komut
 
-    ```
+```
 git diff <commit ID1>..<commitID2> <Dosya ismi>
-    ```
+```
