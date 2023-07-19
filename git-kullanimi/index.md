@@ -99,3 +99,11 @@ git checkout -b <branch ismi>
 ```
 git branch -D <silmek istediğiniz branch ismi>
 ```
+
+## Yeni Bir Dosya Oluşturmak İçin
+
+```
+touch <oluşturmak istediğimiz dosya ismi>
+
+// Örnek ---> touch index.html
+```
