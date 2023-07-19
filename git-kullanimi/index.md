@@ -71,6 +71,7 @@ git revert <Commit ID'nin En Az 7 Karakteri>
 ```
 git diff <commit ID1>..<commitID2> <Dosya ismi>
 ```
+<<<<<<< HEAD
 
 # Git Komutları
 
@@ -143,6 +144,8 @@ git revert <Commit ID'nin En Az 7 Karakteri>
 git diff <commit ID1>..<commitID2> <Dosya ismi>
 ```
 
+=======
+>>>>>>> header
 ## Varolan Branchleri Görmek için
 
 ```
@@ -154,13 +157,19 @@ git diff <commit ID1>..<commitID2> <Dosya ismi>
 ```
  git branch <branch ismi>
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> header
 ### Oluşturduğumuz Branch'i Geçiş Yapmak İçin
 
 ```
 git checkout <oluşturulan branch'in ismi>
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> header
 ### Kısayol
 
 Bu komutla direkt olarak bir branch oluşturur ve o branch e geçiş yapar
@@ -168,7 +177,10 @@ Bu komutla direkt olarak bir branch oluşturur ve o branch e geçiş yapar
 ```
 git checkout -b <branch ismi>
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> header
 ## Oluşturulan Branch'i Silmek için
 
 ```
@@ -211,7 +223,9 @@ git stash apply
 ## Branchlardaki Değişiklikleri Ana Dosyaya Taşımak
 
 ### Merge işlemi
+    Bu işlemle birlikte iki branch'ı birleştirmiş oluyoruz
 
 ```
     git merge <brach1> <branch2>
+```
 ```
