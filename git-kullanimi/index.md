@@ -123,3 +123,13 @@ git stash list
 ```
 git stash clear
 ```
+
+```
+// Listeden kaldırır
+git stash pop
+```
+
+```
+// Değişkliklikleri uygular fakat listeden kaldırmaz
+git stash apply 
+```
