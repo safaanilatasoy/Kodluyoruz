@@ -92,4 +92,3 @@ kısacası js için özel tanımlı ifadeleri kullanamıyoruz.
 class ----> className
 for ----> htmlFor
 
-
