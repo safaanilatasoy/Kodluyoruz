@@ -228,4 +228,7 @@ git stash apply
 ```
     git merge <brach1> <branch2>
 ```
+
+```
+ git merge --squash <branchName>
 ```
