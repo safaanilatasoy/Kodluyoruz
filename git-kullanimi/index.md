@@ -52,3 +52,11 @@ güncellemek isterseniz
 
     git commit --amend
 ```
+Bu işlem sayesinde halihazırda olan commiti değiştirmiş oluyoruz. Yeni bir commit yollamamıza 
+gerek kalmıyor.
+
+## Eğer sadece başlık mesajını değiştirmek isterseniz
+
+    ```
+    git commit --amend -m *yeni mesaj*
+    ```
