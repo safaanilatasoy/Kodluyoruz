@@ -182,3 +182,29 @@ touch <oluşturmak istediğimiz dosya ismi>
 
 // Örnek ---> touch index.html
 ```
+
+## Git Stash
+
+Son committen itibaren yaptığımız tüm commitler stash içinde saklanır
+
+### Git Stash Listesini Görmek
+
+```
+git stash list
+```
+
+### Git Stash Listesini Temizlemek
+
+```
+git stash clear
+```
+
+```
+// Listeden kaldırır
+git stash pop
+```
+
+```
+// Değişkliklikleri uygular fakat listeden kaldırmaz
+git stash apply 
+```
