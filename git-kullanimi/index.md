@@ -61,7 +61,3 @@ gerek kalmıyor.
     git commit --amend -m *yeni mesaj*
     
 
-\```git\
- git commit --amend -m *yeni mesaj*
-
-\```
