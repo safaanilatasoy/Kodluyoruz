@@ -27,7 +27,7 @@ git commit -m main
 ```
 
 
-# Commitlediğimiz Dosyaları En Son Sunuzuya Kaydetmek İçin Kullanılan Komut
+# Commitlediğimiz Dosyaları En Son Sunucuya Kaydetmek İçin Kullanılan Komut
 
 ```
 git push
@@ -60,3 +60,8 @@ gerek kalmıyor.
     
     git commit --amend -m *yeni mesaj*
     
+
+\```git\
+ git commit --amend -m *yeni mesaj*
+
+\```
