@@ -71,3 +71,31 @@ git revert <Commit ID'nin En Az 7 Karakteri>
 ```
 git diff <commit ID1>..<commitID2> <Dosya ismi>
 ```
+## Varolan Branchleri Görmek için
+
+```
+ git branch
+```
+
+## Yeni Bir Branch Oluşturmak İçin
+
+```
+ git branch <branch ismi>
+```
+### Oluşturduğumuz Branch'i Geçiş Yapmak İçin
+
+```
+git checkout <oluşturulan branch'in ismi>
+```
+### Kısayol
+
+Bu komutla direkt olarak bir branch oluşturur ve o branch e geçiş yapar
+
+```
+git checkout -b <branch ismi>
+```
+## Oluşturulan Branch'i Silmek için
+
+```
+git branch -D <silmek istediğiniz branch ismi>
+```
