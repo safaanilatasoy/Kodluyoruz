@@ -117,3 +117,9 @@ Son committen itibaren yaptığımız tüm commitler stash içinde saklanır
 ```
 git stash list
 ```
+
+### Git Stash Listesini Temizlemek
+
+```
+git stash clear
+```
