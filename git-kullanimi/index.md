@@ -193,3 +193,10 @@ git stash apply
 ```
     git merge <brach1> <branch2>
 ```
+<<<<<<< HEAD
+=======
+
+```
+ git merge --squash <branchName>
+```
+>>>>>>> 4011c60 (Yeni Komut | git merge --squash)
