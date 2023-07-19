@@ -186,3 +186,10 @@ git stash pop
 // Değişkliklikleri uygular fakat listeden kaldırmaz
 git stash apply 
 ```
+## Branchlardaki Değişiklikleri Ana Dosyaya Taşımak
+
+### Merge işlemi
+
+```
+    git merge <brach1> <branch2>
+```
