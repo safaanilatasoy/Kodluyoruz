@@ -1,4 +1,4 @@
-
+#Git Komutları
 
 # Yeni Bit Git Projesi Oluşturmak
 
@@ -60,4 +60,3 @@ gerek kalmıyor.
     
     git commit --amend -m *yeni mesaj*
     
-
