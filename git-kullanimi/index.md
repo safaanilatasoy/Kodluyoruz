@@ -197,6 +197,17 @@ git stash apply
 =======
 
 ```
+// Bize commit yapma şansı veriyor.
  git merge --squash <branchName>
 ```
+<<<<<<< HEAD
 >>>>>>> 4011c60 (Yeni Komut | git merge --squash)
+=======
+## Rebase İşlemi
+
+// Değişiklikleri sanki o branch üzerinde yapılmış gibi gösterir ve commit tarihçesinde bunları göstermez
+
+```
+git rebase <branchName>
+```
+>>>>>>> c037e42 (Yeni Komut | git rebase)
