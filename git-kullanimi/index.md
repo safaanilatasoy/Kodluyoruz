@@ -31,11 +31,24 @@ git commit -m main
 
 ```
 git push
-
 ```
 
 # Commitlediğimiz Değişiklikleri Gösteren Komut
 
 ```
 git log
+```
+
+# Bir Commiti Değiştirmek İçin 
+
+Eğer yanlış bir commit atarsanız yada halihazırda commitlediğiniz bir işlemi
+güncellemek isterseniz
+
+```
+// ilk başta eklemek istediklerimizi ekliyoruz
+    git add . 
+
+// Daha sonra 
+
+    git commit --amend
 ```
