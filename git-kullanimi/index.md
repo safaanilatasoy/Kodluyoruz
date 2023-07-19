@@ -230,5 +230,13 @@ git stash apply
 ```
 
 ```
+// Bize commit yapma şansı veriyor.
  git merge --squash <branchName>
+```
+## Rebase İşlemi
+
+// Değişiklikleri sanki o branch üzerinde yapılmış gibi gösterir ve commit tarihçesinde bunları göstermez
+
+```
+git rebase <branchName>
 ```
