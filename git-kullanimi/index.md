@@ -1,4 +1,4 @@
-#Git Komutları
+# Git Komutları
 
 ## Yeni Bit Git Projesi Oluşturmak
 
@@ -65,3 +65,9 @@ gerek kalmıyor.
 ```
 git revert <Commit ID'nin En Az 7 Karakteri>
 ```
+
+## Farklılıkları Gösteren Komut
+
+    ```
+git diff <commit ID1>..<commitID2> <Dosya ismi>
+    ```
