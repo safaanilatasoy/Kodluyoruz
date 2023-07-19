@@ -1,10 +1,41 @@
 
 
-# Master1
+# Yeni Bit Git Projesi Oluşturmak
 
-git init ----> Yeni bir git projesi oluşturur.
-git status ---> Değişiklik yapılan dosyaları gösteren komut.
-git add . ---> Dosya eklemek.
-git commit -m main ---> Commit işlemi .
-git push ---> Commitlediğimiz doyayı en son sunucuya kaydetmek için kullanılan komut.
-git log ---> Commitlediğimiz değişiklikleri gösterir.
+```
+git init
+```
+
+# Değişiklik Yapılan Dosyaları Gösteren Komut
+
+```
+git status
+```
+
+# Dosya Eklemek
+
+
+```
+git add .
+```
+
+
+# Commit İşlemi
+
+```
+git commit -m main
+```
+
+
+# Commitlediğimiz Dosyaları En Son Sunuzuya Kaydetmek İçin Kullanılan Komut
+
+```
+git push
+
+```
+
+# Commitlediğimiz Değişiklikleri Gösteren Komut
+
+```
+git log
+```
