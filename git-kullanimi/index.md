@@ -107,3 +107,13 @@ touch <oluşturmak istediğimiz dosya ismi>
 
 // Örnek ---> touch index.html
 ```
+
+## Git Stash
+
+Son committen itibaren yaptığımız tüm commitler stash içinde saklanır
+
+### Git Stash Listesini Görmek
+
+```
+git stash list
+```
