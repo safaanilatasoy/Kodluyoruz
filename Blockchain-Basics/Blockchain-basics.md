@@ -30,7 +30,7 @@ A block is simply a container for data - it groups data together. The “data”
 
 * This way, we will create consecutive dependencies between blocks.
 
-<img src="images/blockstructure.png" width="300"/>
+<img src="images/blockstructure.png"/>
 
 
 ## Single chains
