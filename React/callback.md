@@ -172,3 +172,40 @@ post 2 {
 }
 
 ```
+
+## Axios Kütüphanesi
+
+node-fetch kütüphanesiyle aynı görevi yapar ancak kullanımı daha kolaydır
+
+### Installation
+
+```
+npm i axios
+```
+### Import 
+
+```
+import axios from "axios";
+```
+### Kulanım
+
+```javascript
+
+import axios from "axios";
+
+async function getData() {
+  const {data: user} = await axios("https://jsonplaceholder.typicode.com/users/1");
+
+  const {data: post} = await axios("https://jsonplaceholder.typicode.com/posts/1");
+
+  const {data: post2} = await axios("https://jsonplaceholder.typicode.com/posts/2");
+
+  console.log("user 1", user);
+  console.log("post 1", post);
+  console.log("post 2", post2);
+}
+
+getData();
+
+```
+
