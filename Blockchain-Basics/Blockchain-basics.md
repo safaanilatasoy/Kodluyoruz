@@ -82,3 +82,14 @@ Then, the longest chain will be the most truthful chain
 
 ## Why do we need mining?
 
+To make sure that the “true” blocks will be added faster, we can introduce a few dynamics to the blockchain.
+
+First, we will make it time consuming to add new blocks by forcing computers to solve a difficult puzzle to create a new block.
+
+* If you ask computers to solve a time-consuming puzzle, you can regulate how fast new blocks get added
+
+<img src="images/time-consuming.png"/>
+
+### Multiple computers working on the puzzle
+
+Second, if more computers try to solve the puzzle simultaneously and the first one solving the puzzle shares the solution with others, it can be solved more quickly simply because more computers are putting effort into it. So, ``the version of blocks that more computers work on gets added faster``.
