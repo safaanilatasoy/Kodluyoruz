@@ -209,3 +209,170 @@ getData();
 
 ```
 
+## Promises
+
+```javascript
+const getComments = () => {
+    return new Promise((resolve, reject) => {
+        console.log("Comments Yukleniyor...");
+
+         resolve();
+    });
+}
+
+getComments().then(() => {
+    console.log("Comments Yuklendi!");
+}).catch(e => console.log(e));
+
+
+```
+
+* resolve : Bu işlem başarıyla gerçekleşti. Al sana data demek
+* reject : Bu kod çalışırken bir problem oluştu ve bunu reject ettim demek
+
+### Output
+
+
+```
+
+Comments Yukleniyor...
+Comments Yuklendi!
+
+```
+
+### Örnek 2
+
+```javascript
+
+const getComments = (number) => {
+    return new Promise((resolve, reject) => {
+        
+        if(number===1){
+            resolve({text:"Resolve oldu"});
+        }
+
+        reject("Bir Problem Oluştu!");
+    });
+}
+
+getComments(2)
+.then((data) => {
+    console.log(data);
+}).catch(e => console.log(e));
+
+```
+
+### Output
+
+```
+Bir Problem Oluştu!
+```
+### Promise Kullanarak data üzerinde işlem yapmak
+
+```javascript
+import axios from "axios";
+
+const getUsers = (number) => {
+    return new Promise(async (resolve, reject) => {
+        const {data} = await axios("https://jsonplaceholder.typicode.com/users/1");
+        
+        resolve(data);
+    });
+
+    
+}
+
+getUsers()
+.then((data) => {
+    console.log(data);
+}).catch(e => console.log(e));
+
+```
+
+#### Output 
+
+```
+{
+  id: 1,
+  name: 'Leanne Graham',
+  username: 'Bret',
+  email: 'Sincere@april.biz',
+  address: {
+    street: 'Kulas Light',
+    suite: 'Apt. 556',
+    city: 'Gwenborough',
+    zipcode: '92998-3874',
+    geo: { lat: '-37.3159', lng: '81.1496' }
+  },
+  phone: '1-770-736-8031 x56442',
+  website: 'hildegard.org',
+  company: {
+    name: 'Romaguera-Crona',
+    catchPhrase: 'Multi-layered client-server neural-net',
+    bs: 'harness real-time e-markets'
+  }
+}
+```
+
+#### Örnek 2
+
+```javascript
+import axios from "axios";
+
+const getPost = (post_id) => {
+  return new Promise(async (resolve, reject) => {
+    const { data } = await axios(
+      "https://jsonplaceholder.typicode.com/posts/" + post_id
+    );
+
+    resolve(data);
+  });
+};
+
+getPost(1)
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((e) => console.log(e));
+  ```
+
+##### Output 
+
+```
+{
+  userId: 1,
+  id: 1,
+  title: 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit',
+  body: 'quia et suscipit\n' +
+    'suscipit recusandae consequuntur expedita et cum\n' +
+    'reprehenderit molestiae ut ut quas totam\n' +
+    'nostrum rerum est autem sunt rem eveniet architecto'
+}
+```
+
+
+#### Kod Kısaltmak
+
+```javascript
+
+getPost(1)
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((e) => console.log(e));
+  ```
+Yukarıdaki yapıyı daha okunabilir yazmak istersek şu şekilde yazabiliriz.
+* NOT: Aşşağıdaki fonksiyon yapısına "Anonim Fonksiyon" denir
+
+
+```javascript
+(async() => {
+    try {
+        const post = await getPost(1);
+
+        console.log(post);
+    }catch(e){
+        console.log(e);
+    }
+})();
+```
