@@ -93,3 +93,10 @@ First, we will make it time consuming to add new blocks by forcing computers to 
 ### Multiple computers working on the puzzle
 
 Second, if more computers try to solve the puzzle simultaneously and the first one solving the puzzle shares the solution with others, it can be solved more quickly simply because more computers are putting effort into it. So, ``the version of blocks that more computers work on gets added faster``.
+
+
+<img src="images/more-computers.png"/>
+
+* They solve puzzles faster
+
+As a result, whatever the majority of the computers in the network agree on is added faster and the longest chain contains these blocks.
