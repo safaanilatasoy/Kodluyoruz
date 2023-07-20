@@ -23,12 +23,13 @@
 //     console.log("Hello");
 // });
 
-import fetch from 'node-fetch';
+import fetch from "node-fetch";
 
-fetch('https://jsonplaceholder.typicode.com/users')
-.then(data => data.json())
-.then(users => {
-    console.log('====================================');
-    console.log(users);
-    console.log('====================================');
-})
+fetch("https://jsonplaceholder.typicode.com/users/1")
+  .then((data) => data.json())
+  .then((user) => {
+    console.log("User Yuklendi!",user);
+    fetch("https://jsonplaceholder.typicode.com/posts/1")
+      .then((data) => data.json())
+      .then((post) => console.log("Post Yuklendi!",post));
+  });
