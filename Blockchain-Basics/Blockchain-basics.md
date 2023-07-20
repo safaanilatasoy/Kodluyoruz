@@ -33,6 +33,52 @@ A block is simply a container for data - it groups data together. The “data”
 <img src="images/blockstructure.png"/>
 
 
-## Single chains
+## Single Chains
 
+Remember: Our goal is to build a system where individuals can add data and collectively agree which data is the “truth” without a central authority deciding the truth.
+
+We now know that data can be kept in a blockchain where blocks of data are connected to each other with hashing.
+
+We can keep growing a single chain by adding new blocks of data
+
+<img src="images/single-chain.png"/>
+
+
+## Distributed Chains
+
+A distributed system can have conflicting versions
+
+<img src="images/dist-chain.png"/>
+
+
+## Which chain represents the truth?
+
+Once there are multiple versions of a blockchain, how can we say which one is the truth? Each copy of the blockchain that represents a different version may be the true version.
+
+<img src="images/dist-chain.png"/>
+
+<img src="images/alice-version.png"/>
+<img src="images/bob-version.png"/>
+<img src="images/jim-version.png"/>
+
+
+### Making the longest chain the “true” blockchain
+
+In this distributed system, we need to introduce some mechanisms for the “true” blockchain to emerge.
+
+There are two fundamental, interdependent tweaks we will implement. We will make it faster to add blocks that are truthful and we will then assume the longest chain is the most truthful chain for the network to use (We have a good reason for that, as we’ll explain in the next section ☝️).
+
+
+1. If you enable truthful blocks to be added more quickly, you can make more truthful blockchains 
+
+Then, the longest chain will be the most truthful chain
+
+<img src="images/longest-chain.png"/>
+
+2. If new blocks only get added to the longest blockchain this further supports the longest and the most truthful blockchain
+
+<img src="images/longest-chain2.png"/>
+
+
+## Why do we need mining?
 
