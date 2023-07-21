@@ -100,3 +100,57 @@ Second, if more computers try to solve the puzzle simultaneously and the first o
 * They solve puzzles faster
 
 As a result, whatever the majority of the computers in the network agree on is added faster and the longest chain contains these blocks.
+
+## 51% Attack
+
+If the majority of computers working on the blockchain are honest and they’re not organized together to change the data, a bad actor won’t be able to manipulate the data. They’ll have no way to catch up with the speed of the longest blockchain and their blockchain will not be valid.
+
+What happens if the majority of computers (at least 51%) are coordinated with each other and they know exactly which data to manipulate? Then, they can solve the puzzles faster, build a longer chain and create an alternate truth. `This is the only way to ‘hack’ a blockchain (also called a 51% attack)`
+
+
+<img src="images/attack51.png"/>
+
+If the blockchain is long enough, it’s almost impossible to go back and change data in previous blocks. Because, then, the hash of the block changes, which requires changing hashes of all subsequent blocks. Solving this puzzle takes too much time — there would be no way to catch up with the newly added blocks to create the longest chain.
+
+## Sumary
+
+Blockchain is designed to enable distributed, decentralized systems to agree on the same version of data.
+
+The data is entered into blocks and, with new material, blocks are chained together as a blockchain. The data on each block is stamped with a hash algorithm and the blocks are chained together using the hash of the previous block.
+
+This blockchain is shared by different computers, called nodes, but because it is a decentralized system, the computers may start producing conflicting versions of the blockchain.
+
+To prevent this, the system requires every node to mine the block as they are added to the blockchain. A node needs to guess a nonce number for a block that produces a hash number.
+
+Because it is a guessing game, the more nodes that try to guess the same version of the block, the faster they are mined. The system also forces nodes to build on top of the longest chain, which further enforces alignment on the longest chain. As a result, the longest chain becomes the reliable and agreed version of data.
+
+Even though it is possible to hijack the blockchain and inject an alternative version of the data, as the chain gets longer and as more nodes join the network, it becomes increasingly difficult to do so.
+
+This way, a decentralized system can collectively build an agreed-upon version of the data and facilitate relationships or information flows between different players without a centralized authority.
+
+
+* f you would like to become a blockchain or web3 developer, you can learn more about transactions, smart contracts, decentralized applications, and programming languages specifically written for blockchain and decentralized apps (e.g. Solidity).
+
+
+<img src="images/developer-path"/>
+
+
+
+* 👩‍💼 If you would like to better understand how you can take advantage of the blockchain for your business, you can learn more about the different use cases for blockchain and how you can address implementation challenges.
+
+
+<img src="images/leader-path.png"/>
+
+
+
+* 👩‍🚀 If you would like to further understand how blockchain evolved and the new things it enabled, you can learn more about cryptocurrencies, token economics, decentralization and web3
+
+<img src="images/explorere-path.png"/>
+
+
+* 👩‍🎨 If you would like to see how your current skill sets can lead to a career in the blockchain field, you can learn more about the career opportunities in blockchain and web3.
+
+<img src="images/career-path.png"/>
+
+
+ Thank you!
