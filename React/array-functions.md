@@ -50,7 +50,7 @@ console.log(result);
 
 ```
 
-## fiter()
+## filter()
 
 Arrayin içinde filtreleme yapar ve uyan sonuçları getirir.
 
