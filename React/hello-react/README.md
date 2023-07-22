@@ -68,3 +68,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## React Notları
+
+### Component
+
+Componentler React'ın en temel yapı taşıdır. Web sayfası componentlerden oluşur.
+
+#### JSX ve Temel Kuralları
+
+##### JSX Nedir?
+
+HTML gibi bir yapı kullanarak js yazmamızı sağlar
+
+* Bir component oluştururken componentin isminin baş harfinin büyük olması gerekiyor. Bunun sebebi
+HTML etiketleriyle componentlerimizin ayırt edilebilmesini sağlayabilmek. Eğer küçük yazarsak compiler,
+etiketi bir HTML etiketi olarak algılar.
+* Bir componentin içinde mutlaka kapsayıcı bir etiket olması gerekir.
+* Özel tanımlı keywordleri Ör.(if, else, class vb.) JSX yazarken kullanmamak önemli
+kısacası js için özel tanımlı ifadeleri kullanamıyoruz.
+
+class ----> className
+for ----> htmlFor
+
+
