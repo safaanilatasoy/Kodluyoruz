@@ -1,6 +1,5 @@
-# kodluyoruzilkrepo
+# Kodluyoruz
  
-Bu repo Kodluyoruz Front-End Eğitiminde oluşturduğumuz ilk repo. içerisinde Kodluyoruz'un Front-End eğitimini çalıırken oluşturduğum dosyalar mevcuttur.
 
 # Installation
 
