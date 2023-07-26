@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import Header from './component/header';
+import User from './component/User';
 
 
 import './App.css';
@@ -10,14 +11,15 @@ const isLoggedIn = true;
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
-      <p className="xyz">
+      <User />
+      {/* <p className="xyz">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
         exercitationem laborum ex quasi illo! AbLorem ipsum dolor sit amet
         consectetur adipisicing elit. Voluptatem exercitationem laborum ex quasi
         illo!
-      </p>
+      </p> */}
       <label htmlFor="myinput">
         <input id="myinput" />
       </label>
@@ -25,7 +27,7 @@ function App() {
       <p>{name}</p>
       {/* Koşullu Render İşlemi Örneği: */}
       <h1>{isLoggedIn ? `Hoşgeldin ${name}` : "Giriş Yapılmadı"}</h1>
-    </div>
+    </>
   );
 }
 
