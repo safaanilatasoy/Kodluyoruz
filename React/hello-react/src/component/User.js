@@ -22,11 +22,11 @@ function User({name, surname, isLoggedIn, age,friends}){
 }
 
 User.propTypes = {
-  name: PropTypes.string,
-  surname: PropTypes.string,
-  isLoggedIn: PropTypes.bool,
+  name: PropTypes.string.isRequired,
+  surname: PropTypes.string.isRequired,
+  isLoggedIn: PropTypes.bool.isRequired,
   age: PropTypes.number,
-  friends: PropTypes.array
-}
+  friends: PropTypes.array,
+};
 
 export default User;
