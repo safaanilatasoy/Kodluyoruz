@@ -2,12 +2,14 @@ import PropTypes from 'prop-types'
 
 
 function User({name, surname, isLoggedIn, age,friends,adresss}){
+
+  if(!isLoggedIn){
+    return <div>Giriş Yapmadınız</div>;
+  }
     return (
       <>
         <h1>
-          {isLoggedIn
-            ? `Hoşgeldin ${name} ${surname} (${age})`
-            : "Lütfen giriş yapın"}
+          { `Hoşgeldin ${name} ${surname} (${age})`}
         </h1>
 
         {address.title} {address.zip}
@@ -36,7 +38,12 @@ User.propTypes = {
   address: PropTypes.shape({
     title: PropTypes.string,
     zip: PropTypes.number
-  })
+  }),
 };
+
+User.defaultProps = {
+  name: 'isimsiz',
+  isLoggedIn: false
+}
 
 export default User;
