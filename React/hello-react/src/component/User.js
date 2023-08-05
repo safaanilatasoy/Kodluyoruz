@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 
 
-function User({name, surname, isLoggedIn, age,friends}){
+function User({name, surname, isLoggedIn, age,friends,adresss}){
     return (
       <>
         <h1>
@@ -9,6 +9,9 @@ function User({name, surname, isLoggedIn, age,friends}){
             ? `Hoşgeldin ${name} ${surname} (${age})`
             : "Lütfen giriş yapın"}
         </h1>
+
+        {address.title} {address.zip}
+        <br />
 
         <h2>Arkadaş Listesi</h2>
         {
@@ -30,6 +33,10 @@ User.propTypes = {
     PropTypes.string
   ]),
   friends: PropTypes.array,
+  address: PropTypes.shape({
+    title: PropTypes.string,
+    zip: PropTypes.number
+  })
 };
 
 export default User;
