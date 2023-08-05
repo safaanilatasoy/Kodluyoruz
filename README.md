@@ -1,5 +1,6 @@
 # Kodluyoruz
  
+Kodluyoruz eğitimleri kapsamında açtığım repositorydir.
 
 # Installation
 
