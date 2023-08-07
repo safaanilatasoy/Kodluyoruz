@@ -1,31 +1,15 @@
 import './App.css';
-import {useState, useEffect} from "react";
+import Counter from "./components/Counter";
+import {useState} from "react";
+
 
 function App() {
-  const [number, setNumber] = useState(0);
-  const [name, setName] = useState('Anıl');
-
-  useEffect(() => {
-    console.log('Number State Updated!');
-  },[number]);
-
-   useEffect(() => {
-     console.log("Name State Updated!");
-   }, [name]);
-
-
-
-  useEffect(() => {
-    console.log('Component mount edildi');
-  },[]);
+  const [isVisible, setIsVisible] = useState(true);
 
   return (
     <div className="App">
-      <h1>{number}</h1>
-      <button onClick={() => setNumber(number + 1)}>+</button>
-      <hr />
-      <h1>{name}</h1>
-      <button onClick={() => setName('Safa')}>setName</button>
+     {isVisible && <Counter />  }    <br />
+      <button onClick={() => setIsVisible(!isVisible)}>Toggle Counter</button>
     </div>
   );
 }
