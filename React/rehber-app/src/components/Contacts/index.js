@@ -1,9 +1,10 @@
 import React from 'react'
+import List from './List'
 
 function Contacts() {
   return (
     <div>
-      contacts
+      <List />
     </div>
   )
 }
