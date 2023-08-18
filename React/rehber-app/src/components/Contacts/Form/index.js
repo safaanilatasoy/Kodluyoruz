@@ -1,11 +1,11 @@
 import React from 'react'
 
-function List() {
+function Form() {
   return (
     <div>
-      Contact List
+      Form
     </div>
   )
 }
 
-export default List
+export default Form
