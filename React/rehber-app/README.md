@@ -1,3 +1,7 @@
+
+![Screenshot_2](https://github.com/safaanilatasoy/Kodluyoruz/assets/61758061/ec49a702-f510-42c5-9aef-eca657e3110f)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
