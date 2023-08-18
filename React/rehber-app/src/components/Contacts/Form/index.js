@@ -27,6 +27,7 @@ function Form({addContact, contacts}) {
 
   return (
     <form onSubmit={onSubmit}>
+      <h4>Add new person</h4>
       <div>
         <input 
         name="fullname" 
@@ -46,7 +47,7 @@ function Form({addContact, contacts}) {
       </div>
 
       <div>
-        <button>Add</button>
+        <button className='submit-button'>Add</button>
       </div>
     </form>
   );

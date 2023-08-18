@@ -10,23 +10,29 @@ function List({contacts}) {
     })
   return (
     <div>
-
-        <input 
-        placeholder="Filter Contact" 
-        value={filterText} 
+      <input
+        placeholder="Filter Contact"
+        value={filterText}
         onChange={(e) => setFilterText(e.target.value)}
-        />
-
-      <ul>
-        {
-            filtered.map((contact, i) =>(
-
-            <li ket={i}>{contact.fullname}</li>
-
-            ))}
-      </ul>
+      />
+      <hr />
+      <h4>Contact List</h4>
+      <table className="list">
+        <tr>
+          <th>Name</th>
+          <th>Phone Number</th>
+        </tr>
+        {filtered.map((contact, i) => (
+          <tr key={i}>
+            <td>{contact.fullname}</td>
+            <td> {contact.phone_number}</td>
+          </tr>
+        ))}
+      </table>
+      <hr />
+  
     </div>
-  )
+  );
 }
 
 export default List
