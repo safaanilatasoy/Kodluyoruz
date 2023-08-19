@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import './style.css'
 
 function Todo() {
+     
      const [todo, setTodo] = useState([
        {
          mission: "Learn JavaScript",
