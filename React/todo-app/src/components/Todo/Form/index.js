@@ -4,7 +4,7 @@ function Form() {
     const [form, setForm] = useState({newTodo: ""});
 
     const onChangeInput = (e) => {
-        setForm({...form, [e.target.name]: e.target.value})
+        setForm({...form, [e.target.name]: e.target.value});
     }
 
     const onSubmit = (e) => {
@@ -13,7 +13,7 @@ function Form() {
         if(form.newTodo === ""){
             return false;
         }
-
+        console.log(form);
     }
   return (
     	<header className="header">
