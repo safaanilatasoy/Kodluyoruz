@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react'
 import List from './List';
 import Form from './Form'
 import './style.css'
+import Footer from './Footer';
 
 function Todo() {
      const [todos, setTodos] = useState([]);
@@ -10,10 +11,11 @@ function Todo() {
       console.log(todos);
      }, [todos])
   return (
-    <div>
-     <Form addTodos={setTodos} todos={todos}/>
-     <List />
-    </div>
+    <section class="todoapp">
+      <Form addTodos={setTodos} todos={todos} />
+      <List todos={todos} />
+      <Footer />
+    </section>
   );
 }
 
