@@ -8,10 +8,10 @@ function Todo() {
 
      useEffect(() => {
       console.log(todos);
-     }, todos)
+     }, [todos])
   return (
     <div>
-     <Form />
+     <Form addTodos={setTodos} todos={todos}/>
      <List />
     </div>
   );

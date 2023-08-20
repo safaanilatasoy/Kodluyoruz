@@ -1,11 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
-function Form() {
+const initialFormValues = {newTodo: ""};
+function Form({addTodos, todos}) {
     const [form, setForm] = useState({newTodo: ""});
 
     const onChangeInput = (e) => {
         setForm({...form, [e.target.name]: e.target.value});
     }
+
+    useEffect(() => {
+        setForm(initialFormValues);
+    }, [todos])
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -13,8 +18,9 @@ function Form() {
         if(form.newTodo === ""){
             return false;
         }
-        console.log(form);
-    }
+        addTodos([...todos, form]);
+        
+    };
   return (
     	<header className="header">
 		<h1>todos</h1>
@@ -25,6 +31,7 @@ function Form() {
             placeholder="What needs to be done?" 
             autoFocus 
             onChange={onChangeInput}
+            value = {form.newTodo}
             />
             <button>Add</button>
 		</form>
