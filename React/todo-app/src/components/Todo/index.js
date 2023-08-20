@@ -14,7 +14,7 @@ function Todo() {
     <section class="todoapp">
       <Form addTodos={setTodos} todos={todos} />
       <List todos={todos} />
-      <Footer />
+      <Footer todos={todos} />
     </section>
   );
 }

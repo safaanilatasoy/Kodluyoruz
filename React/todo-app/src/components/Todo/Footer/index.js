@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Footer() {
+function Footer({todos}) {
   return (
     <footer className="footer">
 		<span className="todo-count">
-			<strong>2</strong>
-			items left
+			<strong>{todos.length} items left</strong>
+			
 		</span>
 
 		<ul className="filters">
