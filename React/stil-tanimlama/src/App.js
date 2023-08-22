@@ -1,10 +1,12 @@
 import './App.css';
+import A from './components/A';
+import B from './components/B';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -13,7 +15,10 @@ function App() {
           Velit, tempore. Voluptates voluptate esse, quo magni harum 
           quis? Sint, fugit unde vitae sapiente repellat ex qui temporibus,
            rerum quidem hic similique!
-        </div>
+        </div> */}
+
+        <A />
+        <B />
       </header>
     </div>
   );
