@@ -3,7 +3,7 @@ import "./style.css";
 
 function B() {
   return (
-    <div>
+    <div className='title'>
       B
     </div>
   )
