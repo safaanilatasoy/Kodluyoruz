@@ -1,12 +1,8 @@
 import React from 'react'
-import "./style.css";
+import style from "./style.module.css";
 
 function B() {
-  return (
-    <div className='title'>
-      B
-    </div>
-  )
+  return <div className={style.title}>B</div>;
 }
 
 export default B
