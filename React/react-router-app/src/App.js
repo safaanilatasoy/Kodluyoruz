@@ -29,6 +29,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/users" element={<Users />} />
           <Route path="/user/:id" element={<User />} />
+          
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
