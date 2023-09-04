@@ -1,7 +1,8 @@
-import { NavLink, Routes, Route} from "react-router-dom";
+import { Routes, Route, Link } from 'react-router-dom';
 import {useEffect, useState} from "react";
 import axios from 'axios';
 import User from "./User"
+import Home from "./Home";
 
 function Users() {
     const [users, setUsers] = useState([]);
@@ -19,18 +20,15 @@ function Users() {
       <ul>
         {users.map((user) => (
           <li key={user.id}>
-            <NavLink
-              to={`${user.id}`}>
+            <Link to={`${user.id}`}>
               {user.name}
-            </NavLink>
+            </Link>
           </li>
         ))}
       </ul>
       <Routes>
-          
-          <Route path={`:id`}>
-          {/* <Topic /> */}
-          </Route>
+        <Route index element={<Home />} />
+        <Route path=":id" element={<Home />} />
       </Routes>
 
       
