@@ -22,6 +22,11 @@ function User() {
       {loading && <div>Loading...</div>}
       {!loading && <code>{JSON.stringify(user)}</code>}
       <p>
+        {
+          `name: ${user.name}`
+        }
+        </p>
+      <p>
         <Link to={`/user/${parseInt(id) + 1}`}>Next User</Link>
       </p>
       
