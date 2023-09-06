@@ -1,40 +1,69 @@
-import {useParams, Link} from 'react-router-dom';
-import { useEffect, useState } from 'react';
 import axios from "axios";
-
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 function User() {
-    const {id} = useParams();
-    const [user, setUser] = useState({});
-     const [loading, setLoading] = useState(true);
+  {
+    /*Burada useParams kullanık ve userden gelen id burada gözükecektir*/
+  }
+  const { id } = useParams();
+  const [user, setUser] = useState();
+  const [isLoading, setLoading] = useState(true);
 
-    useEffect(() =>{
-        axios(`https://jsonplaceholder.typicode.com/users/${id}`)
-        .then(res => setUser(res.data))
-        .finally(() => setLoading(false));
-        
-        
-        
-    }, [id])
+  {
+    /*Apimizin users/"Buraya useParams'taki tanımladığımız yani userden gelen id'yi yazmamız yeterli ve id'yi useEffet ile aktarmamız önemli"*/
+  }
+
+  useEffect(() => {
+    axios(`https://jsonplaceholder.typicode.com/users/${id}`)
+      .then((res) => setUser(res.data))
+      .finally(() => setLoading(false));
+  }, [id]);
 
   return (
     <div>
-      <h1>User Detail</h1>
-      {loading && <div>Loading...</div>}
-      {!loading && <code>{JSON.stringify(user)}</code>}
-      <p>
-        {
-          `name: ${user.name}`
-        }
-        </p>
-      <p>
-        <Link to={`/user/${parseInt(id) + 1}`}>Next User</Link>
-      </p>
-      
-      <p>
-        <Link to={`/user/${parseInt(id) - 1}`}>Previous User</Link>
-      </p>
+      <h1>{id}th User Address </h1>
+      {isLoading && <div>Loading......</div>}
+      <code>
+        {!isLoading && (
+          <ul>
+            <li>
+              <strong>Fullname:</strong> {user.name}
+            </li>
+            <li>
+              <strong>Username:</strong> {user.username}
+            </li>
+            <li>
+              <strong>Mail:</strong> {user.email}
+            </li>
+            <li>
+              <strong>Address:</strong>
+              <br />
+              {user.address.street}
+              {user.address.suite}
+              <br />
+              {user.address.city} <br />
+              {user.address.zipcode}
+            </li>
+          </ul>
+        )}
+      </code>
+      <br />
+      {/*parseInt kullandık çünkü bize gelen id değeri string olduğu için sayı değerine yani int' dönüştürmemiz lazım.
+        Burada yaptığımız işlem eğer id'im 10 'dan küçük ve 1'den büyük ise benim linkimi göster değilse gösterme şeklinde.
+        Users'dan geldiğimiz için to'muza /users/'şeklinde kullandık. 
+      */}
+      {parseInt(id) < 10 && (
+        <Link to={`/users/${parseInt(id) + 1}`}>
+          <strong>Sonraki({parseInt(id) + 1}) </strong>
+        </Link>
+      )}
+      {parseInt(id) > 1 && (
+        <Link to={`/users/${parseInt(id) - 1}`}>
+          <strong>Önceki({parseInt(id) - 1}) </strong>
+        </Link>
+      )}
     </div>
   );
 }
 
-export default User
+export default User;

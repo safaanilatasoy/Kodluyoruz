@@ -1,30 +1,48 @@
-import { Link, Routes,Route, useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
 import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { NavLink, Route, Routes } from "react-router-dom";
 import User from "./User";
 
 function Users() {
-  const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(true);
-
+  {
+    /* Burada users için yani kullanıcılarımız için useState  tanımladık ve loading işlemi içinde tanımladık */
+  }
+  const [users, setUsers] = useState();
+  const [isLoading, setLoading] = useState(true);
+  {
+    /*axios ile Fake apimizi çektik ve useEffect ile render ettik ardından users state'mize set ettik */
+  }
   useEffect(() => {
     axios("https://jsonplaceholder.typicode.com/users")
       .then((res) => setUsers(res.data))
       .finally(() => setLoading(false));
-  }, [id]);
-
+  }, []);
   return (
-    <div>
-      <h1>Users</h1>
-      {loading && <div>Loading...</div>}
-      <ul>
-        {users.map((user) => (
-          <li key={user.id}>
-            <Link to={`/${user.id}`}>{user.name}</Link>
-          </li>
-        ))}
-      </ul>
+    <div className="body">
+      <div>
+        <h1>Users</h1>
+        {isLoading && <div>Loading......</div>}
+        <ul>
+          {" "}
+          {/*ilk loding kontrolü yaptık ardından  map işlemi ile users datamızı çektik  */}
+          {!isLoading &&
+            users?.map((user) => (
+              <li key={user.id}>
+                <NavLink
+                  to={`${user.id}`}
+                  className={({ isActive }) =>
+                    isActive ? "activeClassName" : undefined
+                  }
+                >
+                  {user.name}
+                </NavLink>
+              </li>
+            ))}
+        </ul>
+      </div>
       <Routes>
+        {/* Burada /user/:id yerine sadece :id yazmamız yeterli 
+                    sebebi ise zaten users'ın içinde olduğu için user'ımız yolu bu şekilde bulucaktır aksi taktirde okumuyacak */}
         <Route path=":id" element={<User />} />
       </Routes>
     </div>
