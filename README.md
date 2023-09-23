@@ -12,7 +12,7 @@
 
 Projeyi cloneladıktan sonra Visual Studio Code programında açınız.
 
-Linux için:
+Linux için::
 
 <pre><code>
 cd kodluyoruzilkrepo
