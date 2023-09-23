@@ -10,6 +10,9 @@
     <? $selam = "Merhaba"; ?>
     <h2><?= $selam ?></h2>
     <h3><?php echo 'Merhaba Dünya!!' ?></h3>
+
+
+    <script>alert('<?= "Selam Naber" ?>') </script>
     
 </body>
 </html>
