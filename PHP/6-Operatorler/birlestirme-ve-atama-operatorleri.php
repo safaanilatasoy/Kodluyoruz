@@ -21,4 +21,7 @@ echo $html;
 # Atama operatörleri, bir değişkene değer atamak için kullanılır.
 # Atama operatörü matematikteki (=) eşittir işaretine benzer.
 
+$age = 25;
+
+
 ?>
