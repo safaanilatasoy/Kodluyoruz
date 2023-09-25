@@ -9,6 +9,7 @@
     <h1>Baslik</h1>
     <? $selam = "Merhaba"; ?>
     <h2><?= $selam ?></h2>
+    <h2>Hello World! </h2>
     <h3><?php echo 'Merhaba Dünya!!' ?></h3>
 
 
