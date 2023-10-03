@@ -1,5 +1,5 @@
 // * ─────────────────────────── Ödev #4 || Dosya oluşturma, okuma ve veri ekleme ──────────────────────────────────────────────
-// * fs modülü ile dosya işlemleri yapılabilir. ve fs modülü bu şekilde import edilir ve kullanılır.
+
 
 const fs = require("fs");
 
